@@ -1,7 +1,7 @@
 repeat task.wait() until game:IsLoaded()
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Custom Lighting", "Ocean")
+local Window = Library.CreateLib("Custom Lighting (Right Shift to toggle UI)", "Ocean")
 
 -- lighting stuff below
 
@@ -212,4 +212,8 @@ Section:NewButton("Rejoin", "Rejoin the current server", function()
     local p = game:GetService("Players").LocalPlayer
 
     ts:Teleport(game.PlaceId, p)
+end)
+
+Section:NewKeybind("Toggle UI", "Default: Right Shift", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
 end)
