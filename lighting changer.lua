@@ -196,6 +196,8 @@ Section:NewColorPicker("Decay", "dunno", Color3.fromRGB(92,60,14), function(adec
     Atmosphere.Decay = (adecay)
 end)
 
+--more functions
+
 local Tab = Window:NewTab("More stuff")
 local Section = Tab:NewSection("MOREEEEE")
 
